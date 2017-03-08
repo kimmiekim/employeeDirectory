@@ -1,0 +1,7 @@
+<md-list color="primary" id="list">
+
+<ul *ngFor = 'let employee of employees | filter:term'>
+  <md-list-item>{{employee.name}}</md-list-item>
+  <md-list-item>{{employee.city}}</md-list-item>
+</ul>
+</md-list>

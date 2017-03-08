@@ -1,0 +1,16 @@
+#searchBar {
+  width: 500px;
+  font-size: 2em;
+
+}
+#searchSection {
+  margin-left: 100px;
+}
+#topBar {
+  margin-bottom: 100px;
+}
+#searchDisplay {
+  background-color: #eee;
+  width: 500px;
+  margin-left: 100px;
+}
