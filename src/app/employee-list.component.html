@@ -1,7 +1,13 @@
-<md-list color="primary" id="list">
+<div color="primary" id="list">
 
-<ul *ngFor = 'let employee of employees | filter:term'>
-  <md-list-item>{{employee.name}}</md-list-item>
-  <md-list-item>{{employee.city}}</md-list-item>
-</ul>
-</md-list>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    employee-list
+  </div>
+  <div class="panel-body">
+    <ul *ngFor = 'let employee of employees | filter:term'>
+      <li>{{employee.name}}</li>
+      <li>{{employee.city}}</li>
+    </ul>
+  </div>
+</div>

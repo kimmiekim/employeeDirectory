@@ -1,8 +1,15 @@
-<md-toolbar color="accent" id="topBar">Employee Directory App</md-toolbar>
+<!-- <md-toolbar color="accent" id="topBar">Employee Directory App</md-toolbar>
 
 <md-input-container id="searchSection">
   <input mdInput [(ngModel)]="term" placeholder="Seach Employee's name" value="" id="searchBar">
-</md-input-container>
+</md-input-container> -->
+
+
+<div class="form-group label-static">
+  <label for="i2" class="control-label">Search Employees</label>
+  <input [(ngModel)]="term" type="text" class="form-control" id="i2" placeholder="Last name, First name">
+  <p class="help-block">Enter either <code>name</code> or <code>employee number</code></p>
+</div>
 
 <div class="row" *ngIf="term" id="searchDisplay">
   <h3>You searched for: {{term}}</h3>

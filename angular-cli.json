@@ -62,6 +62,12 @@
       "module": false,
       "pipe": true,
       "service": true
+    },
+
+    "stylePreprocessorOptions": {
+      "includePaths": [
+        "../node_modules/bootstrap-sass/assets/stylesheets"
+      ]
     }
   }
 }
