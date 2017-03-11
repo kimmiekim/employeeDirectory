@@ -1,0 +1,18 @@
+[
+  {
+    "name":"Pikachu",
+    "city": "Tokyo"
+  },
+  {
+    "name": "Snorlex",
+    "city": "Seoul"
+  },
+  {
+    "name": "Ivysaur",
+    "city": "Toronto"
+  },
+  {
+    "name": "Squirtle",
+    "city": "Miami"
+  }
+]

@@ -18,16 +18,13 @@ export class EmployeeListComponent implements OnInit {
   @Input('search-term')
   public term: string = null;
 
-  employees: IEmployee[] = [
-    {"name":"erin", "city": "Barcelona"},
-    {"name": "Lawren", "city": "Milan"},
-    {"name": "Jenny", "city": "Toronto"}
-  ];
+  employees: IEmployee[];
 
-  constructor( private sharedService: SharedService ) { }
+  constructor( private _sharedService: SharedService ) { }
 
   ngOnInit(): void{
-
+   this._sharedService.getEmployees()
+      .subscribe(employees => this.employees = employees);
   }
 
 }
