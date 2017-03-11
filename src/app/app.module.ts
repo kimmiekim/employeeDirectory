@@ -6,10 +6,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail.component';
 
 import { SharedService } from './shared/shared.service';
 import { FilterPipe } from './filter.pipe';
-import { EmployeeDetailComponent } from './employee-detail.component';
+import { Routing } from './shared/app.routing';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { EmployeeDetailComponent } from './employee-detail.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-
+    Routing
   ],
   providers: [ SharedService, FilterPipe ],
   bootstrap: [AppComponent],

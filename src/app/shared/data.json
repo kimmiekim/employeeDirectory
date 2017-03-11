@@ -1,18 +1,22 @@
 [
   {
     "name":"Pikachu",
-    "city": "Tokyo"
+    "city": "Tokyo",
+    "superPower": "cuteness"
   },
   {
     "name": "Snorlex",
-    "city": "Seoul"
+    "city": "Seoul",
+    "superPower": "eating and sleeping"
   },
   {
     "name": "Ivysaur",
-    "city": "Toronto"
+    "city": "Toronto",
+    "superPower": "poisonous??"
   },
   {
     "name": "Squirtle",
-    "city": "Miami"
+    "city": "Miami",
+    "superPower": "It's a turtle"
   }
 ]

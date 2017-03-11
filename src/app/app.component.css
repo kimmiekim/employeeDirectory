@@ -12,5 +12,10 @@
 #searchDisplay {
   background-color: #eee;
   width: 500px;
-  margin-left: 100px;
+  margin-left: 10%;
+}
+
+.content-box {
+  width: 70%;
+  margin-left: 10%;
 }

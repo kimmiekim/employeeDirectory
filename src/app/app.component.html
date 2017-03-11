@@ -3,16 +3,27 @@
 <md-input-container id="searchSection">
   <input mdInput [(ngModel)]="term" placeholder="Seach Employee's name" value="" id="searchBar">
 </md-input-container> -->
+<div class="navbar navbar-warning">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="icon-bar"><a [routerLink]="['/employees']">Pokemon Employee Search</a></span>
+    </div>
+  </div>
 
-
-<div class="form-group label-static">
-  <label for="i2" class="control-label">Search Employees</label>
-  <input [(ngModel)]="term" type="text" class="form-control" id="i2" placeholder="Last name, First name">
-  <p class="help-block">Enter either <code>name</code> or <code>employee number</code></p>
 </div>
 
-<div class="row" *ngIf="term" id="searchDisplay">
-  <h3>You searched for: {{term}}</h3>
+<div class="content-box">
+  <div class="form-group label-static">
+    <label for="i2" class="control-label">Search Employees</label>
+    <input [(ngModel)]="term" type="text" class="form-control" id="i2" placeholder="Last name, First name">
+    <p class="help-block">Enter either <code>name</code> or <code>super power</code></p>
+  </div>
+
+  <div class="row" *ngIf="term" id="searchDisplay">
+    <h3>You searched for: {{term}}</h3>
+  </div>
 </div>
 
+<!-- <router-outlet> -->
 <app-employee [search-term] = "term"></app-employee>
+<!-- </router-outlet> -->
