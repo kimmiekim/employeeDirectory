@@ -13,7 +13,9 @@ import { IEmployee } from './interface';
 
 @Injectable()
 export class SharedService {
-  private _url = 'app/shared/data.json';
+  // private _url = 'app/shared/data.json';
+  private _url = 'http://pokeapi.co/api/v2/language/11/';
+
   constructor(private _http: Http) { }
 
   getEmployees(): Observable<IEmployee[]>{
