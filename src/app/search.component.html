@@ -1,0 +1,22 @@
+<div class="content-box">
+  <div class="form-group label-static">
+    <label for="i2" class="control-label">Search Employees</label>
+    <input name="term "[(ngModel)]="term" (keyup)="searchTerm()" type="text" class="form-control" id="i2" placeholder="Last name, First name">
+    <p class="help-block">Enter either <code>name</code> or <code>super power</code></p>
+  </div>
+
+  <div class="row" *ngIf="term" id="searchDisplay">
+    <h3>You searched for: {{term}}</h3>
+  </div>
+</div>
+
+<div *ngIf= "searchResp">
+  <div *ngFor= "let resp of searchResp">
+    <div class="row">
+      <div class="col-md-row">
+        <p><a routerLink="/artist/{{resp.id}}">{{resp.name}}</a></p>
+        <p>{{resp.album}}</p>
+      </div>
+    </div>
+  </div>
+</div>

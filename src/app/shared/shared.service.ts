@@ -13,15 +13,25 @@ import { IEmployee } from './interface';
 
 @Injectable()
 export class SharedService {
-  // private _url = 'app/shared/data.json';
-  private _url = 'http://pokeapi.co/api/v2/language/11/';
-
   constructor(private _http: Http) { }
+  private url: string;
+  private artistUrl: string;
 
-  getEmployees(): Observable<IEmployee[]>{
-    return this._http.get(this._url)
-      .map((response: Response) => response.json())
-      .do(data => console.log("JSON: " + JSON.stringify(data)))
+  searchTerm(searchString: string, type="artist") {
+    this.url = "https://api.spotify.com/v1/search?query="+searchString+"&offset=0&limit=20&type="+type+"&market=US";
+    // private _url = 'app/shared/data.json';
+    return this._http.get(this.url)
+      .map(resp => resp.json())
+
   }
+
+  getArtist(id:string) {
+    this.artistUrl = "https://api.spotify.com/v1/artists/"+id;
+    // private _url = 'app/shared/data.json';
+    return this._http.get(this.url)
+      .map(resp => resp.json())
+
+  }
+
 
 }

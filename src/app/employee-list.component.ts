@@ -23,8 +23,8 @@ export class EmployeeListComponent implements OnInit {
   constructor( private _sharedService: SharedService ) { }
 
   ngOnInit(): void{
-   this._sharedService.getEmployees()
-      .subscribe(employees => this.employees = employees);
+  //  this._sharedService.getEmployees()
+  //     .subscribe(employees => this.employees = employees);
   }
 
 }

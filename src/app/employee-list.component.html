@@ -1,15 +1,3 @@
-<div class="content-box">
-  <div class="form-group label-static">
-    <label for="i2" class="control-label">Search Employees</label>
-    <input [(ngModel)]="term" type="text" class="form-control" id="i2" placeholder="Last name, First name">
-    <p class="help-block">Enter either <code>name</code> or <code>super power</code></p>
-  </div>
-
-  <div class="row" *ngIf="term" id="searchDisplay">
-    <h3>You searched for: {{term}}</h3>
-  </div>
-</div>
-
 <div *ngIf='term' color="primary" id="list">
     employee-list
 <table class="table table-striped table-hover">
