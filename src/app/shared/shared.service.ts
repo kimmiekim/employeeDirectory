@@ -28,7 +28,7 @@ export class SharedService {
   getArtist(id:string) {
     this.artistUrl = "https://api.spotify.com/v1/artists/"+id;
     // private _url = 'app/shared/data.json';
-    return this._http.get(this.url)
+    return this._http.get(this.artistUrl)
       .map(resp => resp.json())
 
   }
